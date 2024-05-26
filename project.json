@@ -6,9 +6,10 @@
   "dependencies": {
     "UiPath.Excel.Activities": "[2.22.3]",
     "UiPath.Mail.Activities": "[1.21.1]",
-    "UiPath.System.Activities": "[23.10.3]",
+    "UiPath.System.Activities": "[24.3.1]",
     "UiPath.Testing.Activities": "[23.10.0]",
-    "UiPath.UIAutomation.Activities": "[23.10.7]"
+    "UiPath.UIAutomation.Activities": "[23.10.7]",
+    "UiPath.WebAPI.Activities": "[1.20.1]"
   },
   "webServices": [],
   "entitiesStores": [],
@@ -43,7 +44,12 @@
     "processOptions": {
       "ignoredFiles": []
     },
-    "fileInfoCollection": [],
+    "fileInfoCollection": [
+      {
+        "templateType": "Generic",
+        "fileName": ".templates\\APITemplate.xaml"
+      }
+    ],
     "modernBehavior": true,
     "saveToCloud": false
   },

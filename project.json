@@ -50,7 +50,15 @@
     "fileInfoCollection": [
       {
         "templateType": "Generic",
-        "fileName": ".templates\\APITemplate.xaml"
+        "fileName": ".templates\\API\\APITemplate.xaml"
+      },
+      {
+        "templateType": "Generic",
+        "fileName": ".templates\\Email\\LoopOverEmails.xaml"
+      },
+      {
+        "templateType": "Generic",
+        "fileName": ".templates\\Email\\StartJobFromEmail.xaml"
       }
     ],
     "saveToCloud": false

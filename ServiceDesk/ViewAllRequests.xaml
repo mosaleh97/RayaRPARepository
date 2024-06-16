@@ -14,7 +14,7 @@
     <x:Property Name="in_TemplatedInputData" Type="InArgument(x:String)" />
   </x:Members>
   <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
-  <sap:VirtualizedContainerService.HintSize>1240,2892</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1240,2894</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -96,7 +96,7 @@
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="- View Request - Get&#xA;&#xA;Inputs:&#xA;1) in_Count [int] &#xA;2) in_AuthenticationToken [String]&#xA;3) in_TemplatedEndPoint [String] ~~&gt; http://Address/api/v3/requests/{0} &#xA;4) in_SortField [String]&#xA;5) in_StatusName [String]&#xA;6) in_TechnicianName [String]&#xA;7) in_TemplatedInputData [String]&#xA;&#xA;&#xA;Outputs:&#xA;1) out_RequestStatus [Boolean] &#xA;2) out_ReponseContent [String]&#xA;3) out_ResponseSuccess [Boolean]&#xA;2) out_BE [BusinessRuleException]&#xA;3) out_SE [System.exception]" DisplayName="ViewRequest" sap:VirtualizedContainerService.HintSize="838,2827" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence sap2010:Annotation.AnnotationText="- View Request - Get&#xA;&#xA;Inputs:&#xA;1) in_Count [int] &#xA;2) in_AuthenticationToken [String]&#xA;3) in_TemplatedEndPoint [String] ~~&gt; http://Address/api/v3/requests/{0} &#xA;4) in_SortField [String]&#xA;5) in_StatusName [String]&#xA;6) in_TechnicianName [String]&#xA;7) in_TemplatedInputData [String]&#xA;&#xA;&#xA;Outputs:&#xA;1) out_RequestStatus [Boolean] &#xA;2) out_ReponseContent [String]&#xA;3) out_ResponseSuccess [Boolean]&#xA;2) out_BE [BusinessRuleException]&#xA;3) out_SE [System.exception]" DisplayName="ViewRequest" sap:VirtualizedContainerService.HintSize="858,2829" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Boolean" Name="WorklogStatus" />
       <Variable x:TypeArguments="x:Boolean" Name="ResolutionStatus" />
@@ -107,7 +107,7 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap2010:Annotation.AnnotationText="To eleminate retry on success one`s" DisplayName="Status Vars" sap:VirtualizedContainerService.HintSize="776,112" sap2010:WorkflowViewState.IdRef="Sequence_4">
+    <Sequence sap2010:Annotation.AnnotationText="To eleminate retry on success one`s" DisplayName="Status Vars" sap:VirtualizedContainerService.HintSize="796,88" sap2010:WorkflowViewState.IdRef="Sequence_4">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -126,7 +126,7 @@
         </Assign.Value>
       </Assign>
     </Sequence>
-    <TryCatch sap2010:Annotation.AnnotationText="- View All requests - Get" DisplayName="Try Catch - View all Requests" sap:VirtualizedContainerService.HintSize="776,2282" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch sap2010:Annotation.AnnotationText="- View All requests - Get" DisplayName="Try Catch - View all Requests" sap:VirtualizedContainerService.HintSize="796,2371" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
@@ -135,10 +135,10 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <ui:RetryScope sap2010:Annotation.AnnotationText="Retry to view ticket if SE occured&#xA;&#xA;Note this retry scope designed to process each of actions just once if success and ignore the success action in the next iteration-retry" DisplayName="Retry - View all requests" sap:VirtualizedContainerService.HintSize="738,2023" sap2010:WorkflowViewState.IdRef="RetryScope_1">
+        <ui:RetryScope sap2010:Annotation.AnnotationText="Retry to view ticket if SE occured&#xA;&#xA;Note this retry scope designed to process each of actions just once if success and ignore the success action in the next iteration-retry" DisplayName="Retry - View all requests" sap:VirtualizedContainerService.HintSize="758,2090" sap2010:WorkflowViewState.IdRef="RetryScope_1">
           <ui:RetryScope.ActivityBody>
             <ActivityAction>
-              <Sequence sap2010:Annotation.AnnotationText="- View all request - Get" DisplayName="Action" sap:VirtualizedContainerService.HintSize="696,1776" sap2010:WorkflowViewState.IdRef="Sequence_3">
+              <Sequence sap2010:Annotation.AnnotationText="- View all request - Get" DisplayName="Action" sap:VirtualizedContainerService.HintSize="716,1858" sap2010:WorkflowViewState.IdRef="Sequence_3">
                 <Sequence.Variables>
                   <Variable x:TypeArguments="x:String" Name="EndPoint" />
                   <Variable x:TypeArguments="x:String" Name="InputData" />
@@ -150,7 +150,7 @@
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <Sequence sap2010:Annotation.AnnotationText="- Prepare Request Data " DisplayName="View Request - Get" sap:VirtualizedContainerService.HintSize="634,1634" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                <Sequence sap2010:Annotation.AnnotationText="- Prepare Request Data " DisplayName="View Request - Get" sap:VirtualizedContainerService.HintSize="654,1742" sap2010:WorkflowViewState.IdRef="Sequence_10">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -158,7 +158,7 @@
                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <If sap2010:Annotation.AnnotationText="if not processed successfully then retry on it again else continue" DisplayName="If - Not Success" sap:VirtualizedContainerService.HintSize="572,1492" sap2010:WorkflowViewState.IdRef="If_2">
+                  <If sap2010:Annotation.AnnotationText="if not processed successfully then retry on it again else continue" DisplayName="If - Not Success" sap:VirtualizedContainerService.HintSize="592,1600" sap2010:WorkflowViewState.IdRef="If_2">
                     <If.Condition>
                       <InArgument x:TypeArguments="x:Boolean">
                         <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_2">!out_RequestSuccess</CSharpValue>
@@ -172,13 +172,13 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                     <If.Then>
-                      <Sequence sap:VirtualizedContainerService.HintSize="538,1279" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                      <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="558,1308" sap2010:WorkflowViewState.IdRef="Sequence_8">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <Sequence sap2010:Annotation.AnnotationText="Prepare Request Data based on the Request Action type [Generic]" DisplayName="Prepare Request Data" sap:VirtualizedContainerService.HintSize="496,224" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                        <Sequence sap2010:Annotation.AnnotationText="Prepare Request Data based on the Request Action type [Generic]" DisplayName="Prepare Request Data" sap:VirtualizedContainerService.HintSize="496,256" sap2010:WorkflowViewState.IdRef="Sequence_5">
                           <Sequence.Variables>
                             <Variable x:TypeArguments="x:String" Name="variable1" />
                           </Sequence.Variables>
@@ -189,7 +189,7 @@
                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <Assign DisplayName="Assign - InputData" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_4">
+                          <Assign DisplayName="Assign - InputData" sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_4">
                             <Assign.To>
                               <OutArgument x:TypeArguments="x:String">
                                 <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_18">InputData</CSharpReference>
@@ -202,14 +202,14 @@
                             </Assign.Value>
                           </Assign>
                         </Sequence>
-                        <ui:LogMessage DisplayName="Run Get request" sap:VirtualizedContainerService.HintSize="496,141" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info">
+                        <ui:LogMessage DisplayName="Run Get request" sap:VirtualizedContainerService.HintSize="496,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info">
                           <ui:LogMessage.Message>
                             <InArgument x:TypeArguments="x:Object">
                               <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_35">"Run GET HTTP Request to get ticket with TicketID ["+in_Count+"]"</CSharpValue>
                             </InArgument>
                           </ui:LogMessage.Message>
                         </ui:LogMessage>
-                        <ui:HttpClient Body="{x:Null}" ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" Username="{x:Null}" AcceptFormat="JSON" sap2010:Annotation.AnnotationText="Run get HTTP request" AuthenticationType="None" BodyFormat="application/json" DisplayName="Get HTTP Request" EnableSSLVerification="True" sap:VirtualizedContainerService.HintSize="496,101" sap2010:WorkflowViewState.IdRef="HttpClient_1" Method="GET" TimeoutMS="6000">
+                        <ui:HttpClient Body="{x:Null}" ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" Username="{x:Null}" AcceptFormat="JSON" sap2010:Annotation.AnnotationText="Run get HTTP request" AuthenticationType="None" BodyFormat="application/json" DisplayName="Get HTTP Request" EnableSSLVerification="True" sap:VirtualizedContainerService.HintSize="496,133" sap2010:WorkflowViewState.IdRef="HttpClient_1" Method="GET" TimeoutMS="6000">
                           <ui:HttpClient.Attachments>
                             <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
                           </ui:HttpClient.Attachments>
@@ -251,7 +251,7 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </ui:HttpClient>
-                        <If sap2010:Annotation.AnnotationText="!ResponseStatus.ToString().StartsWith(&quot;2&quot;)" DisplayName="If - Status not Success " sap:VirtualizedContainerService.HintSize="496,391" sap2010:WorkflowViewState.IdRef="If_1">
+                        <If sap2010:Annotation.AnnotationText="!ResponseStatus.ToString().StartsWith(&quot;2&quot;)" DisplayName="If - Status not Success " sap:VirtualizedContainerService.HintSize="496,499" sap2010:WorkflowViewState.IdRef="If_1">
                           <If.Condition>
                             <InArgument x:TypeArguments="x:Boolean">
                               <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_9">!out_RequestStatus.ToString().StartsWith("2")</CSharpValue>
@@ -265,13 +265,13 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                           <If.Then>
-                            <Sequence sap:VirtualizedContainerService.HintSize="376,178" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                            <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,198" sap2010:WorkflowViewState.IdRef="Sequence_6">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <Throw DisplayName="Throw - SE" sap:VirtualizedContainerService.HintSize="334,90" sap2010:WorkflowViewState.IdRef="Throw_1">
+                              <Throw DisplayName="Throw - SE" sap:VirtualizedContainerService.HintSize="354,113" sap2010:WorkflowViewState.IdRef="Throw_1">
                                 <InArgument x:TypeArguments="s:Exception">
                                   <CSharpValue x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="CSharpValue`1_37">new Exception("Unpredictable error occured while proceed Get HTTP Request to view ticket with ID ["+in_Count+"], Details ["+out_ResponseContent+"]")</CSharpValue>
                                 </InArgument>
@@ -279,10 +279,16 @@
                             </Sequence>
                           </If.Then>
                           <If.Else>
-                            <Sequence sap2010:WorkflowViewState.IdRef="Sequence_7" />
+                            <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,100" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </Sequence>
                           </If.Else>
                         </If>
-                        <ui:LogMessage DisplayName="&quot;HTTP Request is done successfully&quot;" sap:VirtualizedContainerService.HintSize="496,52" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info">
+                        <ui:LogMessage DisplayName="&quot;HTTP Request is done successfully&quot;" sap:VirtualizedContainerService.HintSize="496,57" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info">
                           <ui:LogMessage.Message>
                             <InArgument x:TypeArguments="x:Object">
                               <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_38">"HTTP Request to view current TicketID ["+in_Count+"] is done successfully"</CSharpValue>
@@ -295,7 +301,7 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </ui:LogMessage>
-                        <Assign DisplayName="Assign - UpdateStatus" sap:VirtualizedContainerService.HintSize="496,82" sap2010:WorkflowViewState.IdRef="Assign_6">
+                        <Assign DisplayName="Assign - UpdateStatus" sap:VirtualizedContainerService.HintSize="496,105" sap2010:WorkflowViewState.IdRef="Assign_6">
                           <Assign.To>
                             <OutArgument x:TypeArguments="x:Boolean">
                               <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_8">out_RequestSuccess</CSharpReference>
@@ -308,7 +314,7 @@
                       </Sequence>
                     </If.Then>
                     <If.Else>
-                      <Sequence sap:VirtualizedContainerService.HintSize="300,80" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                      <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,100" sap2010:WorkflowViewState.IdRef="Sequence_9">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>

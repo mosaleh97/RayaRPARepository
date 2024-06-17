@@ -59,6 +59,10 @@
       {
         "templateType": "Generic",
         "fileName": ".templates\\Email\\StartJobFromEmail.xaml"
+      },
+      {
+        "templateType": "Generic",
+        "fileName": ".templates\\Email\\AddQueueItemFromMail.xaml"
       }
     ],
     "saveToCloud": false

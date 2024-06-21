@@ -10,9 +10,9 @@
     "UiPath.Excel.Activities": "[2.22.4]",
     "UiPath.Mail.Activities": "[1.21.1]",
     "UiPath.MicrosoftOffice365.Activities": "[2.6.22]",
-    "UiPath.System.Activities": "[24.3.1]",
+    "UiPath.System.Activities": "[24.10.0]",
     "UiPath.Testing.Activities": "[23.10.0]",
-    "UiPath.UIAutomation.Activities": "[23.10.7]",
+    "UiPath.UIAutomation.Activities": "[23.10.12]",
     "UiPath.WebAPI.Activities": "[1.20.1]"
   },
   "webServices": [],
@@ -64,6 +64,10 @@
       {
         "templateType": "Generic",
         "fileName": ".templates\\Email\\AddQueueItemFromMail.xaml"
+      },
+      {
+        "templateType": "Generic",
+        "fileName": ".templates\\UI\\SignIn.xaml"
       }
     ],
     "saveToCloud": false

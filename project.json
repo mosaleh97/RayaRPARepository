@@ -70,6 +70,7 @@
         "fileName": ".templates\\UI\\SignIn.xaml"
       }
     ],
+    "modernBehavior": false,
     "saveToCloud": false
   },
   "expressionLanguage": "CSharp",

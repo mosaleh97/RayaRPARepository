@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="1240,1310" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:snm="clr-namespace:System.Net.Mail;assembly=System.Net.Mail" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:um="clr-namespace:UiPath.Mail;assembly=UiPath.Mail.Activities" xmlns:umab="clr-namespace:UiPath.Mail.Activities.Business;assembly=UiPath.Mail.Activities" xmlns:umabh="clr-namespace:UiPath.Mail.Activities.Business.HtmlEditor;assembly=UiPath.Mail.Activities" xmlns:umam="clr-namespace:UiPath.MicrosoftOffice365.Activities.Mail;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:umame="clr-namespace:UiPath.MicrosoftOffice365.Activities.Mail.Enums;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="934,1380" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:snm="clr-namespace:System.Net.Mail;assembly=System.Net.Mail" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:um="clr-namespace:UiPath.Mail;assembly=UiPath.Mail.Activities" xmlns:umab="clr-namespace:UiPath.Mail.Activities.Business;assembly=UiPath.Mail.Activities" xmlns:umabh="clr-namespace:UiPath.Mail.Activities.Business.HtmlEditor;assembly=UiPath.Mail.Activities" xmlns:umam="clr-namespace:UiPath.MicrosoftOffice365.Activities.Mail;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:umame="clr-namespace:UiPath.MicrosoftOffice365.Activities.Mail.Enums;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -135,7 +135,7 @@
       <AssemblyReference>System.Linq.Async.Queryable</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="512,1245" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence sap:VirtualizedContainerService.HintSize="546,1315" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <Sequence.Variables>
       <Variable x:TypeArguments="scg:List(snm:MailMessage)" Name="mailMessages" />
     </Sequence.Variables>
@@ -144,14 +144,14 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:GetOutlookMailMessages Account="{x:Null}" Filter="{x:Null}" FilterByMessageIds="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Get Outlook Mail Messages" GetAttachements="False" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="GetOutlookMailMessages_1" MailFolder="Inbox" MarkAsRead="False" OnlyUnreadMessages="True" OrderByDate="NewestFirst" Top="30">
+    <ui:GetOutlookMailMessages Account="{x:Null}" Filter="{x:Null}" FilterByMessageIds="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Get Outlook Mail Messages" GetAttachements="False" sap:VirtualizedContainerService.HintSize="484,25" sap2010:WorkflowViewState.IdRef="GetOutlookMailMessages_1" MailFolder="Inbox" MarkAsRead="False" OnlyUnreadMessages="True" OrderByDate="NewestFirst" Top="30">
       <ui:GetOutlookMailMessages.Messages>
         <OutArgument x:TypeArguments="scg:List(snm:MailMessage)">
           <CSharpReference x:TypeArguments="scg:List(snm:MailMessage)" sap2010:WorkflowViewState.IdRef="CSharpReference`1_1">mailMessages</CSharpReference>
         </OutArgument>
       </ui:GetOutlookMailMessages.Messages>
     </ui:GetOutlookMailMessages>
-    <Assign sap:VirtualizedContainerService.HintSize="450,114" sap2010:WorkflowViewState.IdRef="Assign_1">
+    <Assign sap:VirtualizedContainerService.HintSize="484,82" sap2010:WorkflowViewState.IdRef="Assign_1">
       <Assign.To>
         <OutArgument x:TypeArguments="scg:List(snm:MailMessage)">
           <CSharpReference x:TypeArguments="scg:List(snm:MailMessage)" sap2010:WorkflowViewState.IdRef="CSharpReference`1_2">mailMessages</CSharpReference>
@@ -163,7 +163,7 @@
         </InArgument>
       </Assign.Value>
     </Assign>
-    <umab:ExchangeApplicationCard ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" SharedMailbox="{x:Null}" Account="mohamed_gaber@rayacorp.com" DisplayName="Use Outlook 365" EmailAddress="mohamed_gaber@rayacorp.com" sap:VirtualizedContainerService.HintSize="450,668" sap2010:WorkflowViewState.IdRef="ExchangeApplicationCard_1" UseConnectionService="False">
+    <umab:ExchangeApplicationCard ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" SharedMailbox="{x:Null}" Account="mohamed_gaber@rayacorp.com" DisplayName="Use Outlook 365" EmailAddress="mohamed_gaber@rayacorp.com" sap:VirtualizedContainerService.HintSize="484,674" sap2010:WorkflowViewState.IdRef="ExchangeApplicationCard_1" UseConnectionService="False">
       <umab:ExchangeApplicationCard.ApplicationId>
         <InArgument x:TypeArguments="x:String">
           <Literal x:TypeArguments="x:String" Value="" />
@@ -174,13 +174,13 @@
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="um:IMailQuickHandle" Name="Exchange" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,414" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,452" sap2010:WorkflowViewState.IdRef="Sequence_3">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <umam:GetEmailListConnections ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" EmailList="{x:Null}" Filter="{x:Null}" Mailbox="{x:Null}" ManualEntryFolder="{x:Null}" AuthScopesInvalid="False" BodyAsHtml="False" BrowserFolder="Inbox" BrowserFolderId="Inbox" ConnectionId="7707998c-23d8-4b8d-a352-8db7a4a4d37a" DisplayName="Get Email List" sap:VirtualizedContainerService.HintSize="354,281" sap2010:WorkflowViewState.IdRef="GetEmailListConnections_1" Importance="Any" IncludeSubfolders="False" MarkAsRead="False" MaxResults="100" OrderByDate="NewestFirst" SelectionMode="Browse" UnreadOnly="False" UseConnectionService="True" UseSharedMailbox="False" WithAttachmentsOnly="False">
+            <umam:GetEmailListConnections ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" EmailList="{x:Null}" Filter="{x:Null}" Mailbox="{x:Null}" ManualEntryFolder="{x:Null}" AuthScopesInvalid="False" BodyAsHtml="False" BrowserFolder="Inbox" BrowserFolderId="Inbox" ConnectionId="7707998c-23d8-4b8d-a352-8db7a4a4d37a" DisplayName="Get Email List" sap:VirtualizedContainerService.HintSize="388,249" sap2010:WorkflowViewState.IdRef="GetEmailListConnections_1" Importance="Any" IncludeSubfolders="False" MarkAsRead="False" MaxResults="100" OrderByDate="NewestFirst" SelectionMode="Browse" UnreadOnly="False" UseConnectionService="True" UseSharedMailbox="False" WithAttachmentsOnly="False">
               <umam:GetEmailListConnections.FolderIdBackup>
                 <usau:BackupSlot x:TypeArguments="umame:ItemSelectionMode" StoredValue="Browse">
                   <usau:BackupSlot.BackupValues>
@@ -196,7 +196,7 @@
                 </usau:BackupSlot>
               </umam:GetEmailListConnections.MailboxBackup>
             </umam:GetEmailListConnections>
-            <umab:ReplyToMailX AdditionalCc="{x:Null}" AdditionalTo="{x:Null}" Bcc="{x:Null}" Body="{x:Null}" HtmlBodyFromText="{x:Null}" NewSubject="{x:Null}" DisplayName="Reply To Email" sap:VirtualizedContainerService.HintSize="354,48" sap2010:WorkflowViewState.IdRef="ReplyToMailX_1" MaxBodyDocumentSizeMB="2" ReplyToAll="False" UseDocumentAsBody="False">
+            <umab:ReplyToMailX AdditionalCc="{x:Null}" AdditionalTo="{x:Null}" Bcc="{x:Null}" Body="{x:Null}" HtmlBodyFromText="{x:Null}" NewSubject="{x:Null}" DisplayName="Reply To Email" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="ReplyToMailX_1" MaxBodyDocumentSizeMB="2" ReplyToAll="False" UseDocumentAsBody="False">
               <umab:ReplyToMailX.Files>
                 <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
               </umab:ReplyToMailX.Files>
@@ -237,7 +237,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </umab:ExchangeApplicationCard>
-    <ui:ReplyToOutlookMailMessage AddBcc="{x:Null}" AddCc="{x:Null}" AddTo="{x:Null}" NewSubject="{x:Null}" ReplyFrom="{x:Null}" TimeoutMS="{x:Null}" Body="hello" DisplayName="Reply To Outlook Mail Message" sap:VirtualizedContainerService.HintSize="450,154" sap2010:WorkflowViewState.IdRef="ReplyToOutlookMailMessage_1" Importance="Normal" ReplyAll="False">
+    <ui:ReplyToOutlookMailMessage AddBcc="{x:Null}" AddCc="{x:Null}" AddTo="{x:Null}" NewSubject="{x:Null}" ReplyFrom="{x:Null}" TimeoutMS="{x:Null}" Body="hello" DisplayName="Reply To Outlook Mail Message" sap:VirtualizedContainerService.HintSize="484,122" sap2010:WorkflowViewState.IdRef="ReplyToOutlookMailMessage_1" Importance="Normal" ReplyAll="False">
       <ui:ReplyToOutlookMailMessage.Files>
         <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
       </ui:ReplyToOutlookMailMessage.Files>
@@ -247,7 +247,7 @@
         </InArgument>
       </ui:ReplyToOutlookMailMessage.MailMessage>
     </ui:ReplyToOutlookMailMessage>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="450,164" sap2010:WorkflowViewState.IdRef="LogMessage_1">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="484,141" sap2010:WorkflowViewState.IdRef="LogMessage_1">
       <ui:LogMessage.Message>
         <InArgument x:TypeArguments="x:Object">
           <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1">"Watching"</CSharpValue>

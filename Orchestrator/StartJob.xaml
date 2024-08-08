@@ -32,7 +32,7 @@
     </InArgument>
   </this:ReadAssetsToConfig.in_inputArgumentsDictionary>
   <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
-  <sap:VirtualizedContainerService.HintSize>1240,2096</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1240,2328</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -157,15 +157,15 @@
       <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Start job" sap:VirtualizedContainerService.HintSize="745,2031" sap2010:WorkflowViewState.IdRef="Sequence_4">
+  <Sequence DisplayName="Start job" sap:VirtualizedContainerService.HintSize="745,2263" sap2010:WorkflowViewState.IdRef="Sequence_4">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch Start job" sap:VirtualizedContainerService.HintSize="683,1943" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch Start job" sap:VirtualizedContainerService.HintSize="683,2175" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Try>
-        <Sequence DisplayName="Start job" sap:VirtualizedContainerService.HintSize="645,1692" sap2010:WorkflowViewState.IdRef="Sequence_6">
+        <Sequence DisplayName="Start job" sap:VirtualizedContainerService.HintSize="645,1924" sap2010:WorkflowViewState.IdRef="Sequence_6">
           <Sequence.Variables>
             <Variable x:TypeArguments="x:String" Name="ProcessKey" />
           </Sequence.Variables>
@@ -205,7 +205,14 @@
               </sap:WorkflowViewStateService.ViewState>
             </ui:MultipleAssign>
           </Sequence>
-          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke GetProcessKey" sap:VirtualizedContainerService.HintSize="583,145" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Orchestrator\\GetProcessKey.xaml">
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="583,173" sap2010:WorkflowViewState.IdRef="LogMessage_1">
+            <ui:LogMessage.Message>
+              <InArgument x:TypeArguments="x:Object">
+                <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_86">"Invoke get process key"</CSharpValue>
+              </InArgument>
+            </ui:LogMessage.Message>
+          </ui:LogMessage>
+          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke GetProcessKey" sap:VirtualizedContainerService.HintSize="583,204" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Orchestrator\\GetProcessKey.xaml">
             <ui:InvokeWorkflowFile.Arguments>
               <InArgument x:TypeArguments="x:String" x:Key="in_OrchestratorFolderFullPath">
                 <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_63">in_OrchestratorFolderFullPath</CSharpValue>
@@ -348,7 +355,7 @@
                       <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:MultipleAssign sap2010:Annotation.AnnotationText="JsonSerialized&#xD;&#xA;Payload" DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="479,221" sap2010:WorkflowViewState.IdRef="MultipleAssign_7">
+                  <ui:MultipleAssign sap2010:Annotation.AnnotationText="JsonSerialized&#xA;Payload" DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="479,221" sap2010:WorkflowViewState.IdRef="MultipleAssign_7">
                     <ui:MultipleAssign.AssignOperations>
                       <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                         <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_13">

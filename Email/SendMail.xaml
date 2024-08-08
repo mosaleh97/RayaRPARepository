@@ -1,6 +1,6 @@
 <Activity mc:Ignorable="sap sap2010" x:Class="SendSuccess" this:SendSuccess.in_UseSMTP="True" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sn="clr-namespace:System.Net;assembly=System.Net.Primitives" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
-    <x:Property sap2010:Annotation.AnnotationText="SMTPServer&#xD;&#xA;SMTPPort&#xD;&#xA;" Name="in_Config" Type="InArgument(scg:Dictionary(x:String, x:Object))" />
+    <x:Property sap2010:Annotation.AnnotationText="SMTPServer&#xA;SMTPPort&#xA;" Name="in_Config" Type="InArgument(scg:Dictionary(x:String, x:Object))" />
     <x:Property Name="out_SE" Type="OutArgument(s:Exception)" />
     <x:Property Name="in_Subject" Type="InArgument(x:String)" />
     <x:Property Name="in_HTMLBody" Type="InArgument(x:String)" />
